@@ -25,7 +25,7 @@ export const LogIn = () => {
           Login in with your Communica Microsoft 365 account
         </CardDescription>
       </CardHeader>
-      <CardContent className="grid gap-4">
+      <CardContent className="grid gap-2">
         <Button onClick={() => signIn("azure-ad")}> Login</Button>
         {process.env.NODE_ENV === "development" && (
           <Button onClick={() => signIn("localdev")}>Basic Auth (DEV ONLY)</Button>
